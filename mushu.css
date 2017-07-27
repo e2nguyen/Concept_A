@@ -152,6 +152,7 @@
       overflow: hidden; /* prevents video from overflowing viewport on play */
       z-index: 1;
       background-image: url("https://e2nguyen.github.io/practice2/mulan-50.png");
+      background-size: cover;
    }
 
    #fallbackIMG {
