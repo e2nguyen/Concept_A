@@ -141,13 +141,19 @@
                    and (max-device-width: 480px)
                    and (-webkit-min-device-pixel-ratio: 2)
 {
+
+   div {
+     vertical-align: top;
+   }
+
+
    .mushu__video {
      display: none;
    }
 
 
    .mushu {
-      position: fixed;
+      position: relative;
       display: flex; /* clears whitespace btwn divs */
       font-size: 0; /* if flex unsupported */
       z-index: 10;
