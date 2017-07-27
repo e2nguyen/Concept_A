@@ -145,6 +145,10 @@
      display: none;
    }
 
+   #overlay {
+    display: none;
+   }
+
    .mushu {
       position: relative;
       display: flex; /* clears whitespace btwn divs */
