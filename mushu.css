@@ -147,8 +147,8 @@
 
 
    .mushu {
-      position: relative;
-      /*display: flex; /* clears whitespace btwn divs */
+      position: fixed;
+      display: flex; /* clears whitespace btwn divs */
       font-size: 0; /* if flex unsupported */
       z-index: 10;
       background-image: url("https://e2nguyen.github.io/practice2/mulan-50.png");
@@ -182,7 +182,7 @@
 
    .about p {
      font: 15px 'Zilla Slab', 'PT Sans', serif;
-     padding: 0 15%;
+     padding: 0 11%;
   
    }
 }
