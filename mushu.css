@@ -97,8 +97,8 @@
     }   
    
 
-   .intro, #hey, #meet, .mushu {
-     border: 2px solid blue;
+   * {
+     border: 1px solid blue;
    } 
 
    .intro {
@@ -149,7 +149,6 @@
       position: relative;
       display: flex; /* clears whitespace btwn divs */
       font-size: 0; /* if flex unsupported */
-      height: 100%;
       z-index: 1;
       background-image: url("https://e2nguyen.github.io/practice2/mulan-50.png");
       background-size: cover;
