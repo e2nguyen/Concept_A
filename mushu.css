@@ -145,18 +145,15 @@
      display: none;
    }
 
-   #overlay {
-    display: none;
-   }
 
    .mushu {
       position: relative;
       display: flex; /* clears whitespace btwn divs */
       font-size: 0; /* if flex unsupported */
       z-index: 1;
-    /*  background-image: url("https://e2nguyen.github.io/practice2/mulan-50.png");
+      background-image: url("https://e2nguyen.github.io/practice2/mulan-50.png");
       background-size: cover;
- */  }
+   }
 
    #fallbackIMG {
      width: 100%;
