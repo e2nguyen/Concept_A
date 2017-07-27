@@ -141,10 +141,10 @@
                    and (max-device-width: 480px)
                    and (-webkit-min-device-pixel-ratio: 2)
 {
- /*  .mushu__video {
+   .mushu__video {
      display: none;
    }
-*/
+
    .mushu {
       position: relative;
       display: flex; /* clears whitespace btwn divs */
