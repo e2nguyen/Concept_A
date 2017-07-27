@@ -155,7 +155,6 @@
    .intro {
      position: relative;
      height: 100%; /* parallax */
-     font-size: 0; /* same */
      z-index: 2; /* same*/
      background-color: rgba(0,0,0,0.87);
      padding: 2em 0;
