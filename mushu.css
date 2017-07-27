@@ -143,6 +143,8 @@
 {
    .mushu__video {
      display: none;
+      background-image: url("https://e2nguyen.github.io/practice2/mulan-50.png");
+      background-size: cover;
    }
 
 
@@ -171,28 +173,16 @@
    }
 
    #hey {
-     position: inherit;
      left: 16%;
-     margin: 2% 10% 0 0;
-     color: #555;
-     font: 30px 'FuturaPT', sans-serif;
-     letter-spacing: 0.3em;
+     font: 30px 'Ubuntu', sans-serif;
    }
    
    #meet {
-     position: inherit;
      left: 30%;
-     margin: 1% 30% 0 0;  
-     color: #555;  
      font: 30px 'Ubuntu', sans-serif;
-     letter-spacing: 0.37em;
    }
 
    .about p {
-     margin: 3% auto; 
-     padding: 0 20%;
-     color: #555;
      font: 15px 'Zilla Slab', 'PT Sans', serif;
-     line-height: 3rem;
    }
 }
