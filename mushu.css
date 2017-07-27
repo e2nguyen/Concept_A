@@ -96,11 +96,11 @@
       letter-spacing: 0.37em;
     }   
    
- 
+/* 
    .intro, #hey, #meet, .mushu {
      border: 2px solid blue;
    } 
-
+*/
    .intro {
      position: relative;
      top: 100%; /*added for parallax*/
