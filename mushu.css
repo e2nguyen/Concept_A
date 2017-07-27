@@ -1,8 +1,8 @@
 
   @font-face {
     font-family: FuturaPT;
-    src: url("fonts/Futura/FuturaPT-Bold.ttf") format("truetype"),
-         url("fonts/Futura/FuturaPT-Bold.woff") format("wofF");
+    src: url("https://e2nguyen.github.io/practice2/fonts/Futura/FuturaPT-Bold.ttf") format("truetype"),
+         url("https://e2nguyen.github.io/practice2/fonts/Futura/FuturaPT-Bold.woff") format("wofF");
   }
 
 
