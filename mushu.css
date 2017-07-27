@@ -96,11 +96,11 @@
       letter-spacing: 0.37em;
     }   
    
-/* 
-   .intro, #hey, #meet {
+ 
+   .intro, #hey, #meet, .mushu {
      border: 2px solid blue;
    } 
-*/
+
    .intro {
      position: relative;
      top: 100%; /*added for parallax*/
@@ -146,7 +146,7 @@
    }
 
    .mushu {
-      position: fixed;
+      position: relative;
       display: flex; /* clears whitespace btwn divs */
       font-size: 0; /* if flex unsupported */
       z-index: 1;
