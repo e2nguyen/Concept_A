@@ -1,0 +1,176 @@
+
+  @font-face {
+    font-family: FuturaPT;
+    src: url("fonts/Futura/FuturaPT-Bold.ttf") format("truetype"),
+         url("fonts/Futura/FuturaPT-Bold.woff") format("wofF");
+  }
+
+
+  html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+  html {
+    overflow-x: hidden; 
+  }
+
+  .navi {
+     position: fixed;
+     width: 100%;
+     height: 7.5%;
+     z-index: 3;
+     padding-top: 30px;
+     background: #222;
+     background: rgba(0,0,0,0.5);
+  }
+  
+  .navLogo {
+    position: relative;
+    top: -80%;
+    padding-left: 4.5%;
+    text-transform: uppercase;
+    font: 26px 'FuturaPT', sans-serif;
+    text-decoration: none;
+    color: white;
+  }
+
+  .navLogo:hover {
+    color: yellowgreen;
+    transition: 0.26s;
+    text-decoration: none;
+  }
+
+  .navbar {
+    position: relative;
+    top: -35%;
+    float: right;
+    padding-right: 5%;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    padding: 18px;
+    color: white;
+    font: 9.6px 'Lato', sans-serif;
+  }
+
+  .navbar a:hover {
+    color: rgb(249,34,78);
+    transition: 0.26s;
+    text-decoration: none;
+  }
+
+
+   .mushu {
+      position: relative;
+      display: flex; /* clears whitespace btwn divs */
+      font-size: 0; /* if flex unsupported */
+      overflow: hidden; /* prevents video from overflowing viewport on play */
+      z-index: 1;
+   }
+
+    .mushu__video {
+      /*position: static; */
+      position: fixed; /*added for parallax*/
+      width: 100vw;
+      height: 100vh; /* 99.8 w/o parallax */
+      z-index: 2;
+      background-size: contain;
+      object-fit: cover;
+    }
+
+ 
+    .mushu h1 {
+      /*position: absolute;*/
+      position: fixed; /* parallax */
+      top: 37%;
+      left: 26%;
+      /* text-transform: uppercase; */
+      font: calc(4vw + 4vh + 2vmin) 'Ubuntu', sans-serif; 
+      color: white;
+      z-index: 2;
+      letter-spacing: 0.37em;
+    }   
+   
+/* 
+   .intro, #hey, #meet {
+     border: 2px solid blue;
+   } 
+*/
+   .intro {
+     position: relative;
+     top: 100%; /*added for parallax*/
+     z-index: 2; /* same*/
+     background-color: rgba(0,0,0,0.87);
+     padding: 2em 0;
+   }
+
+   #hey {
+     position: inherit;
+     left: 16%;
+     margin: 2% 10% 0 0;
+     color: #555;
+     font: 60px 'FuturaPT', sans-serif;
+     letter-spacing: 0.3em;
+   }
+   
+   #meet {
+     position: inherit;
+     left: 30%;
+     margin: 1% 30% 0 0;  
+     color: #555;  
+     font: 60px 'Ubuntu', sans-serif;
+     letter-spacing: 0.37em;
+   }
+
+   .about p {
+     margin: 3% auto; 
+     padding: 0 20%;
+     color: #555;
+     font: 22px 'Zilla Slab', 'PT Sans', serif;
+     line-height: 3rem;
+     letter-spacing: 0.001em;
+   }
+
+/* smaller screens and devices, adjust screen layout */
+@media only screen and (max-width: 768px)
+{
+
+   .intro {
+     position: relative;
+     top: 100%; /*added for parallax*/
+     z-index: 2; /* same*/
+     background-color: rgba(0,0,0,0.87);
+     padding: 2em 0;
+   }
+
+   #hey {
+     position: inherit;
+     left: 16%;
+     margin: 2% 10% 0 0;
+     color: #555;
+     font: 30px 'FuturaPT', sans-serif;
+     letter-spacing: 0.3em;
+   }
+   
+   #meet {
+     position: inherit;
+     left: 30%;
+     margin: 1% 30% 0 0;  
+     color: #555;  
+     font: 30px 'Ubuntu', sans-serif;
+     letter-spacing: 0.37em;
+   }
+
+   .about p {
+     margin: 3% auto; 
+     padding: 0 20%;
+     color: #555;
+     font: 15px 'Zilla Slab', 'PT Sans', serif;
+     line-height: 3rem;
+   }
+}
