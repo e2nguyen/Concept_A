@@ -95,7 +95,8 @@
       z-index: 2;
       letter-spacing: 0.37em;
     }   
-   
+
+/*   
    .about, .mushu, h1 {
      border: 1px solid blue;
    }
@@ -103,7 +104,7 @@
    .mushu__video { 
      border: 1px solid red;
    }
-
+*/
    .intro {
      position: relative;
      top: 100%; /*added for parallax*/
