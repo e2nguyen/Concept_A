@@ -145,9 +145,9 @@
                    and (max-device-width: 480px)
                    and (-webkit-min-device-pixel-ratio: 2)
 {
-
+/*
    html {
-     background-image: url("https://e2nguyen.github.io/practice2/mulan-50.png")
+     background-image: url("https://e2nguyen.github.io/mulan-50.png")
                        no-repeat center center fixed;
      -webkit-background-size: cover;
      -moz-background-size: cover;
@@ -155,7 +155,7 @@
      background-size: cover;
      position: fixed;
    }
-
+*/
 
 
    .mushu__video {
@@ -168,7 +168,7 @@
       display: flex; /* clears whitespace btwn divs */
       font-size: 0; /* if flex unsupported */
       z-index: 10;
-      background-image: url("https://e2nguyen.github.io/practice2/mulan-50.png");
+      background-image: url("https://e2nguyen.github.io/mulan-50.png");
       background-size: cover;
    }
 
