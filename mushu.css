@@ -115,7 +115,7 @@
 
    #hey {
      position: inherit;
-     left: 16%;
+     left: 14%;
      margin: 2% 10% 0 0;
      color: #555;
      font: 60px 'FuturaPT', sans-serif;
@@ -145,7 +145,7 @@
                    and (max-device-width: 480px)
                    and (-webkit-min-device-pixel-ratio: 2)
 {
-/*
+
    html {
      background-image: url("https://e2nguyen.github.io/mulan-50.png")
                        no-repeat center center fixed;
@@ -155,7 +155,7 @@
      background-size: cover;
      position: fixed;
    }
-*/
+
 
 
    .mushu__video {
