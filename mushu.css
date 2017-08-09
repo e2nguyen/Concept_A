@@ -28,7 +28,7 @@
   
   .navLogo {
     position: relative;
-    top: -80%;
+    top: -115%;
     padding-left: 4.5%;
     text-transform: uppercase;
     font: 26px 'FuturaPT', sans-serif;
@@ -44,7 +44,7 @@
 
   .navbar {
     position: relative;
-    top: -35%;
+    top: -55%;
     float: right;
     padding-right: 5%;
   }
