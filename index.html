@@ -34,36 +34,12 @@
           Your browser does not support this video.
         </video>
         
-        <!--img id="fallbackIMG" src="https://e2nguyen.github.io/practice2/mulan-50.png"--> 
-        <h1>who am i?</h1>  
-	<script src="canvas-video-player.js"></script>
+	<div>   
+          <img id="fallbackIMG" src="https://e2nguyen.github.io/mulan-50.png"> 
+        </div>
+	    
+	<h1>who am i?</h1>  
 
-
-	<script>
-	
-	var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
-	
-	if (isIOS) {
- 
-		var canvasVideo = new CanvasVideoPlayer({
-			videoSelector: '.video',
-			canvasSelector: '.canvas',
-			timelineSelector: false,
-			autoplay: true,
-			makeLoop: true,
-			pauseOnClick: false,
-			audio: false
-		});
-		
-	}else {
-		
-		// Use HTML5 video
-		document.querySelectorAll('.canvas')[0].style.display = 'none';
-		
-	}	
-	
-	</script>
-        
       </div>
     </div>
 
