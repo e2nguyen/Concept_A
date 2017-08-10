@@ -105,6 +105,10 @@
      border: 1px solid red;
    }
 */
+   #fallbackIMG {
+     display: none;
+   }
+
    .intro {
      position: relative;
      top: 100%; /*added for parallax*/
@@ -159,14 +163,14 @@
       background-image: url("https://e2nguyen.github.io/mulan-50.png");
       background-size: cover;
    }
-/*
+
    #fallbackIMG {
      width: 100%;
      height:100%;
      margin: 0;
      position: fixed;
    }
-*/
+
    .intro {
      position: relative;
      /*height: 100%; /* parallax */
