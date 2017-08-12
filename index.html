@@ -4,10 +4,14 @@
   <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
 
   <title>PRACTICE</title>
-  <link rel="stylesheet" type="text/css" href="mushu.css">
+  <link rel="stylesheet" type="text/css" href="https://e2nguyen.github.io/mushu.css">
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Karla|Lato|PT+Sans|Ubuntu:400,500|Zilla+Slab" rel="stylesheet">
+
+<!-- jquery must be linked before js file of jquery occurence -->
+  <script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://e2nguyen.github.io/mushu.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 </head>
 <body>
@@ -16,6 +20,7 @@
     <div class="navi">
       <nav>
         <a href="#" class="navLogo">LoGo</a>
+        <a id="i-nav" href="#"></a>
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -24,22 +29,24 @@
           </ul> 
       </nav>
     </div>
-  <div class="mushu"> 
-        <video id="vid" class="mushu__video" poster="https://e2nguyen.github.io/mulan-50.png" onended="videoEnded(this)" onclick="PlayPause(this)">
-          <source src="https://e2nguyen.github.io/videos/MulanMeetsMushuHD.mp4" type="video/mp4"/>
-          <source src="https://e2nguyen.github.io/videos/MulanMeetsMushuHD.webm" type="video/webm"/>
-          <source src="https://e2nguyen.github.io/videos/MulanMeetsMushuHD.ogg" type="video/ogg"/>
-          Your browser does not support this video.
-        </video>
+    <div class="mushu"> 
+      <video id="vid" class="mushu__video" poster="https://e2nguyen.github.io/mulan-50.png" onended="videoEnded(this)" onclick="PlayPause(this)">
+        <source src="https://e2nguyen.github.io/videos/MulanMeetsMushuHD.mp4" type="video/mp4"/>
+        <source src="https://e2nguyen.github.io/videos/MulanMeetsMushuHD.webm" type="video/webm"/>
+        <source src="https://e2nguyen.github.io/videos/MulanMeetsMushuHD.ogg" type="video/ogg"/>
+        Your browser does not support this video.
+      </video>
+
 	<div>   
           <img id="fallbackIMG" src="https://e2nguyen.github.io/mulan-50.png"> 
         </div>
 	    
 	<h1>who am i?</h1>  
 
-      </div>
+    </div>
 
   </header>
+
   <div  class="intro">
     <p id="hey">Hey! I'm Erica,</p>
     <p id="meet">Nice to meet you</p>

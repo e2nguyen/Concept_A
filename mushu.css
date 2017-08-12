@@ -51,7 +51,6 @@
   ul li a {
     position: relative;
     top: 40%;
-    display: block;
     float: left;
     
     text-transform: uppercase;
@@ -158,12 +157,8 @@
      letter-spacing: 0.001em;
    }
 
+
 /* smaller screens and devices, adjust screen layout */
-@media (min-width: 1024px) 
-{
-}
-
-
 @media (max-width: 1024px) 
 {
   .navLogo {
@@ -174,6 +169,7 @@
 
   ul {
     width: 100%;
+    display: none;
   }
 
   ul li {
@@ -193,45 +189,62 @@
     text-align: center;
   }
 
-   .mushu__video {
-   /*  display: none;
-   */}
+  #i-nav {
+    display: block;
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
 
-   .mushu {
-      position: fixed;
-      display: flex; /* clears whitespace btwn divs */
-      font-size: 0; /* if flex unsupported */
-      background-image: url("https://e2nguyen.github.io/mulan-50.png");
-      background-size: cover;
-   }
+    border-radius: 100%;
+    background: #ccc;
+  }
 
-/*   #fallbackIMG {
-     width: 100%;
-     height:100%;
-     margin: 0;
-     position: fixed;
-   }
+  .showNav {
+    display: block;
+  }
+  
+/*  .mushu__video {
+    display: none;
+  }
 */
-   .intro {
-     position: relative;
-     /*height: 100%; /* parallax */
-     z-index: 2; /* same*/
-     background-color: rgba(0,0,0,0.87);
-     padding: 2em 0;
-   }
+  .mushu {
+     position: fixed;
+     display: flex; /* clears whitespace btwn divs */
+     font-size: 0; /* if flex unsupported */
+     background-image: url("https://e2nguyen.github.io/mulan-50.png");
+     background-size: cover;
+  }
 
-   #hey {
-     left: 16%;
-     font: 30px 'Ubuntu', sans-serif;
-   }
+  #fallbackIMG {
+    display: block;
+    width: 100%;
+    height:100%;
+    margin: 0;
+    position: fixed;
+  }
+
+  .intro {
+    position: relative;
+    /*height: 100%; /* parallax */
+    z-index: 2; /* same*/
+    background-color: rgba(0,0,0,0.87);
+    padding: 2em 0;
+  }
+
+  #hey {
+    left: 16%;
+    font: 30px 'Ubuntu', sans-serif;
+  }
    
-   #meet {
-     left: 23%;
-     font: 30px 'Ubuntu', sans-serif;
-   }
+  #meet {
+    left: 23%;
+    font: 30px 'Ubuntu', sans-serif;
+  }
 
-   .about p {
-     font: 16px 'Zilla Slab', 'PT Sans', serif;
-     padding: 0 11%;
-   }
+  .about p {
+    font: 16px 'Zilla Slab', 'PT Sans', serif;
+    padding: 0 11%;
+  }
 }
