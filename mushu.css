@@ -5,6 +5,10 @@
          url("https://e2nguyen.github.io/fonts/Futura/FuturaPT-Bold.woff") format("wofF");
   }
 
+  * {
+    padding: 0px;
+  }
+
 
   html, body {
     height: 100%;
@@ -19,19 +23,58 @@
   .navi {
      position: fixed;
      width: 100%;
-     height: 7.5%;
-     z-index: 3;
-     padding-top: 30px;
+     height: 47px;
+     z-index: 2;
      background: #222;
      background: rgba(0,0,0,0.5);
   }
+
+  ul {
+    list-style: none;
+    float: right;
+    width: 30%;
+    height: 47px;
+  }
+
+  a {
+    text-decoration: none;
+  }
   
+  li {
+    display: inline;
+    float: left;  
+    height: 47px;
+    width: auto;
+    margin-right: 37px;
+  }
+
+  ul li a {
+    position: relative;
+    top: 40%;
+    display: block;
+    float: left;
+    
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: white;
+    font: 9.6px 'Lato', sans-serif;
+  }
+
+  li a:hover {
+    color: rgb(249,34,78);
+    transition: 0.26s;
+    text-decoration: none;
+  }
+
   .navLogo {
     position: relative;
-    top: -115%;
-    padding-left: 4.5%;
+    float: left;
+    width: auto;
+    margin: 8px 28px;
+
     text-transform: uppercase;
     font: 26px 'FuturaPT', sans-serif;
+    letter-spacing: 0.02em;
     text-decoration: none;
     color: white;
   }
@@ -42,35 +85,16 @@
     text-decoration: none;
   }
 
-  .navbar {
-    position: relative;
-    top: -55%;
-    float: right;
-    padding-right: 5%;
+  header {
+    float: left;
+    width: 100%;
   }
-
-  .navbar a {
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    padding: 18px;
-    color: white;
-    font: 9.6px 'Lato', sans-serif;
-  }
-
-  .navbar a:hover {
-    color: rgb(249,34,78);
-    transition: 0.26s;
-    text-decoration: none;
-  }
-
 
    .mushu {
       position: relative;
       display: flex; /* clears whitespace btwn divs */
       font-size: 0; /* if flex unsupported */
       overflow: hidden; /* prevents video from overflowing viewport on play */
-      z-index: 1;
    }
 
     .mushu__video {
@@ -78,7 +102,6 @@
       position: fixed; /*added for parallax*/
       width: 100vw;
       height: 100vh; /* 99.8 w/o parallax */
-      z-index: 2;
       background-size: contain;
       object-fit: cover;
     }
@@ -96,15 +119,6 @@
       letter-spacing: 0.37em;
     }   
 
-/*   
-   .about, .mushu, h1 {
-     border: 1px solid blue;
-   }
-
-   .mushu__video { 
-     border: 1px solid red;
-   }
-*/
    #fallbackIMG {
      display: none;
    }
@@ -145,32 +159,59 @@
    }
 
 /* smaller screens and devices, adjust screen layout */
-@media only screen and (min-width: 320px) 
-                   and (max-device-width: 480px)
-                   and (-webkit-min-device-pixel-ratio: 2)
+@media (min-width: 1024px) 
 {
+}
+
+
+@media (max-width: 1024px) 
+{
+  .navLogo {
+    width: 100%;
+    text-align: center;
+    margin: 8px 0;
+  }
+
+  ul {
+    width: 100%;
+  }
+
+  ul li {
+    width: 100%;
+  }
+
+  ul li:hover {
+    width: 100%;
+    color: rgba(39,119,119);
+    transition: 0.26s;
+    background: rgba(0,0,0,0.5);
+    outline: white solid 1px;
+  }
+
+  ul li a {
+    width: 100%;
+    text-align: center;
+  }
 
    .mushu__video {
    /*  display: none;
-  */ }
-
+   */}
 
    .mushu {
       position: fixed;
       display: flex; /* clears whitespace btwn divs */
       font-size: 0; /* if flex unsupported */
-      z-index: 10;
       background-image: url("https://e2nguyen.github.io/mulan-50.png");
       background-size: cover;
    }
 
-   #fallbackIMG {
+/*   #fallbackIMG {
      width: 100%;
      height:100%;
      margin: 0;
      position: fixed;
    }
-
+*/
    .intro {
      position: relative;
      /*height: 100%; /* parallax */
