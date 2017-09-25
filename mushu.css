@@ -9,7 +9,6 @@
     padding: 0px;
   }
 
-
   html, body {
     height: 100%;
     width: 100%;
@@ -29,7 +28,7 @@
      background: rgba(0,0,0,0.5);
   }
 
-  ul {
+  .navi ul {
     list-style: none;
     float: right;
     width: 30%;
@@ -40,7 +39,7 @@
     text-decoration: none;
   }
   
-  li {
+  .navi li {
     display: inline;
     float: left;  
     height: 47px;
@@ -48,7 +47,7 @@
     margin-right: 37px;
   }
 
-  ul li a {
+  .navi ul li a {
     position: relative;
     top: 40%;
     float: left;
@@ -59,7 +58,7 @@
     font: 9.6px 'Lato', sans-serif;
   }
 
-  li a:hover {
+  .navi li a:hover {
     color: rgb(249,34,78);
     transition: 0.26s;
     text-decoration: none;
@@ -107,11 +106,9 @@
 
  
     .mushu h1 {
-      /*position: absolute;*/
       position: fixed; /* parallax */
       top: 37%;
       left: 26%;
-      /* text-transform: uppercase; */
       font: calc(4vw + 4vh + 2vmin) 'Ubuntu', sans-serif; 
       color: white;
       z-index: 2;
@@ -131,33 +128,144 @@
    }
 
    #hey {
-     position: inherit;
-     left: 14%;
-     margin: 2% 10% 0 0;
+     width: 60%;
+     margin: 0% auto;
+     padding: 1.5% 0;
+
      color: #555;
      font: 60px 'FuturaPT', sans-serif;
-     letter-spacing: 0.3em;
-   }
-   
-   #meet {
-     position: inherit;
-     left: 24%;
-     margin: 1% 30% 0 0;  
-     color: #555;  
-     font: 60px 'Ubuntu', sans-serif;
+     line-height: 1.25em;
      letter-spacing: 0.37em;
+     text-align: center;
    }
 
    .about p {
-     margin: 3% auto; 
-     padding: 0 20%;
+     margin: 5% auto; 
+     padding: 0% 20%;
      color: #555;
      font: 22px 'Zilla Slab', 'PT Sans', serif;
      line-height: 3rem;
      letter-spacing: 0.001em;
    }
 
+   #contact {
+     width: 100%;
+     margin: 0 auto;
+     text-align: center;
+     padding-top: 3%;
+     color: #555;
+   }
 
+   #contact p {
+    width: 100%;
+
+    text-transform: uppercase;
+    font: 55px 'FuturaPT', sans-serif;          
+    letter-spacing: 0.27em;
+  }
+
+  #contactLinks {
+    display: inline-block;
+    list-style: none;
+  }
+
+  #contactLinks .icons {
+    font: 16px 'Zilla Slab', 'PT Sans', serif;
+    color: #444;
+  }
+
+  #contactLinks li {
+    text-align: left;
+    margin-top: 20px;
+    margin-right: 32px;
+  }
+
+  #contactLinks .fa-linkedin, #contactLinks .material-icons {
+    height: 50px;
+    width: 50px;
+    margin-right: 15px;
+    text-align: center;
+    border-radius: 50%;
+    background: #444;
+    font-size: 25px;
+    line-height: 2em;
+    color: black;
+    vertical-align: middle;
+  }
+
+  hr {
+    width: 60%;
+  }
+
+  .col-md-3 {
+    height: 100px;
+    line-height: 8em;
+    text-align: center;
+    background: #0bc;
+    opacity: 0.5;
+  }
+
+
+  #up-button {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    line-height: 3em;
+    text-align: center;
+    -webkit-animation-name: bounce;  
+    -webkit-animation-duration: 1.9s;  
+    animation-name: bounce;
+    animation-duration: 1.9s;  
+    animation-iteration-count: infinite;
+    font-size: 50px;
+  } 
+
+  .fa-angle-up:link, .fa-angle-up:hover {
+    text-decoration: none;
+  }
+
+  .fa-angle-up:visited {
+    color: #444;
+  }
+
+  .fa-angle-up:hover {
+    color: #3bc;
+    opacity: 0.5;
+  }
+
+@-webkit-keyframes bounce {
+  0%    {top: 0px;}
+  50%   {top: 5px;}
+  100%  {top: 0px;}
+}
+
+@keyframes bounce {
+  0%    {top: 0px;}
+  50%   {top: 5px;}
+  100%  {top: 0px;}
+}
+
+@media (min-width: 1024px)
+{
+  .navi ul {
+    display: block;
+  }
+
+}
+
+@media (max-width: 1225px) 
+{
+  .navi ul {
+    width: 35%;
+  }
+}
+
+@media (max-width: 1060px) 
+{
+  .navi ul {
+    width: 37%;
+  }
+}
 /* smaller screens and devices, adjust screen layout */
 @media (max-width: 1024px) 
 {
@@ -167,24 +275,32 @@
     margin: 8px 0;
   }
 
-  ul {
+  .navi ul {
     width: 100%;
     display: none;
   }
 
-  ul li {
-    width: 100%;
+  #contactLinks ul {
+    display: block;
   }
 
-  ul li:hover {
+  .navi ul li {
+    width: 100%;
+    margin-bottom: 2px;
+  }
+
+  .navi ul li:hover {
     width: 100%;
     color: rgba(39,119,119);
+    -webkit-transition: 0.26s;
+    -moz-transition: 0.26s;
+    -o-transition: 0.26s;
     transition: 0.26s;
     background: rgba(0,0,0,0.5);
-    outline: white solid 1px;
+    outline: rgba(100,100,100,0.7) solid 2px;
   }
 
-  ul li a {
+  .navi ul li a {
     width: 100%;
     text-align: center;
   }
@@ -192,17 +308,31 @@
   #i-nav {
     display: block;
     position: absolute;
-    top: 6px;
-    right: 10px;
-    width: 35px;
-    height: 35px;
+    top: 7px;
+    right: 15px;
+    width: 34px;
+    height: 34px;
 
     border-radius: 100%;
-    background: #ccc;
+    background: #333;
+  }
+  
+  #i-nav:hover {
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    background: transparent;
+    border: #333 solid 1px;
   }
 
   .showNav {
     display: block;
+  }
+
+  .openNav {
+    background: transparent !important;
+    border: #333 solid 1px;
   }
   
 /*  .mushu__video {
@@ -223,28 +353,22 @@
     height:100%;
     margin: 0;
     position: fixed;
+    background-size: cover;
   }
 
   .intro {
     position: relative;
-    /*height: 100%; /* parallax */
-    z-index: 2; /* same*/
+    z-index: 2; /* parallax */
     background-color: rgba(0,0,0,0.87);
     padding: 2em 0;
   }
 
-  #hey {
-    left: 16%;
-    font: 30px 'Ubuntu', sans-serif;
-  }
-   
-  #meet {
-    left: 23%;
-    font: 30px 'Ubuntu', sans-serif;
+  #hey, #contact p {
+    font-size: 30px;
   }
 
   .about p {
-    font: 16px 'Zilla Slab', 'PT Sans', serif;
-    padding: 0 11%;
+    font-size: 16px;
   }
+
 }

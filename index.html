@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+
   <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
 
-  <title>PRACTICE</title>
+  <title>Concept A</title>
   <link rel="stylesheet" type="text/css" href="https://e2nguyen.github.io/mushu.css">
-  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Karla|Lato|PT+Sans|Ubuntu:400,500|Zilla+Slab" rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Karla|Lato|PT+Sans|Ubuntu:400,500|Zilla+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!-- jquery must be linked before js file of jquery occurence -->
   <script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://e2nguyen.github.io/mushu.js"></script>
  
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
 </head>
 <body>
-
   <header>
     <div class="navi">
       <nav>
         <a href="#" class="navLogo">LoGo</a>
-        <a id="i-nav" href="#"></a>
+        <a id="i-nav" href="#"><i class="down"></i></a>
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Portfolio</></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul> 
       </nav>
     </div>
@@ -36,26 +38,26 @@
         <source src="https://e2nguyen.github.io/videos/MulanMeetsMushuHD.ogg" type="video/ogg"/>
         Your browser does not support this video.
       </video>
-
-	<div>   
-          <img id="fallbackIMG" src="https://e2nguyen.github.io/mulan-50.png"> 
-        </div>
-	    
-	<h1>who am i?</h1>  
-
+	  </div>
+    <div>   
+      <img id="fallbackIMG" src="https://e2nguyen.github.io/mulan-50.png"> 
     </div>
-
+    <div>	
+  	  <h1>who am i?</h1>  
+    </div>
   </header>
-
+ 
   <div  class="intro">
-    <p id="hey">Hey! I'm Erica,</p>
-    <p id="meet">Nice to meet you</p>
+    <p id="hey">Hey! I'm Erica, <br> Nice to meet you</p>
   <div>
+
+  <hr style="border: #333 solid 1px">
   <section class="about">
     <div class="col">
     <p>Writing intros is weird. Am I supposed to tell you I like cats or something
-       like that? Anyway, if you've found this page you're probably a cool tech
-       potato. Feel free to stick around and click around!
+       ? (Because I do, if that's what you were wondering) Anyway, if you've found
+       this page you're probably a cool tech potato. Feel free to stick around and
+       click around!
        If you're not, then I'm not sure how you found this page :I, BUT IT'S OK!
        I won't discriminate against your sick hobbies unless, of course,
        you hate waffles in which case you should probably show yourself out because
@@ -63,13 +65,46 @@
        uninformative intros ever - seriously at this point you're probably thinking
        "wtf is even happening?" - but that's ok because all you have to know is
        that I'm Erica, and again, hey, it's nice to meet you.
-    </p>
-    <p>
+  
+       <br><br> 
+
        Also, go ahead, <i>click that background</i>,
        and if anyone's asking it's not dicking around under the guise
-       of profiling. (But between you and me, <i>it totally is</i> ^^)
+       of profiling. (But between you and me, <i>it totally is</i>)
+       
+       <br>
+
+       P.S: If you're on mobile, there is no surprise. 
     </p>
     </div> 
   </section>
+  
+  <hr style="border: #333 solid 1px">
+  
+  <div id="contact">
+    <p>contact</p>
+    <hr style=" width: 25%; border: #333 solid 0.5px; margin: 2em auto">
+
+    <div class="row"> 
+      <div>
+        <ul id="contactLinks">
+          <li>
+            <a href="#" target="_self" class="icons" >
+              <span class="fa fa-linkedin"></span>
+              linkedin.account.edumoremore
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_self" class="icons">
+              <span class="material-icons">mail_outline</span>
+              eannguyen@ucdavis.edu
+            </a>
+          </li>
+        </ul>  
+      </div>
+      <a href="#" target="_self" id="up-button" class="fa fa-angle-up"></a>
+    <div>
+  </div>
+
 </body>
 </html>
