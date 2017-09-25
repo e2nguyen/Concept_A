@@ -8,9 +8,9 @@
  
     $('#i-nav').click(function() {
       $(this).toggleClass('openNav')
-      $('ul').fadeToggle(170)
-      $('ul').toggleClass('showNav')        
-    })
+      $('.navi ul').fadeToggle(170)
+      $('.navi ul').toggleClass('showNav')        
+    }) // .navi ul specified, otherwise conflicts with contact's ul
 
   })
 
